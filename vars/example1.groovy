@@ -5,3 +5,5 @@ def call() {
 def example2() {
     echo "echo example2 shared libs jenkins"
 }
+
+return this
