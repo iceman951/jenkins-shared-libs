@@ -1,11 +1,13 @@
 def call() {
-    def echoBanner(def ... msgs) {
-    echo createBanner(msgs)
-    }   
+    return this
+}
 
-    def errorBanner(def ... msgs) {
-    error(createBanner(msgs))
-    }
+def echoBanner(def ... msgs) {
+   echo createBanner(msgs)
+}
+
+def errorBanner(def ... msgs) {
+   error(createBanner(msgs))
 }
 
 def createBanner(def ... msgs) {
